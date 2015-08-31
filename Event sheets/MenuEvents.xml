@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuEvents</name>
+    <events>
+        <comment>Tap to start fade</comment>
+        <event-block sid="8094544075375212">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="7932339036852575" type="TapToStartMenu" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="4436048941412398" type="TapToStartMenu" />
+            </actions>
+        </event-block>
+        <comment>Menu button</comment>
+        <event-block sid="6602201231073601">
+            <conditions>
+                <condition id="14" name="On tap" sid="4697053093663031" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="3628144169116175" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

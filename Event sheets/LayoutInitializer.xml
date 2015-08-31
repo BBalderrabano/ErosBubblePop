@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LayoutInitializer</name>
+    <events>
+        <include>BubbleCalibration</include>
+        <event-block sid="7788081957104031">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4791035841005646" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7202020717331452" type="System">
+                    <param id="0" name="Variable">SpawnTime</param>
+                    <param id="1" name="Value">LayoutName = &quot;Level1&quot; ? 1.3 : LayoutName = &quot;Level2&quot; ? 1 : LayoutName = &quot;Level3&quot; ? 0.8 : LayoutName = &quot;Level4&quot; ? 0.6 : 0.5</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="209131668908335" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8715926336445836" type="TapToStart">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-6" name="Set height" sid="1823946132532407" type="ProgressBarMiddle">
+                    <param id="0" name="Height">((TotalBubbles - AliveBubbles) * 210) / TotalBubbles</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7463911687736494">
+            <conditions>
+                <condition id="17" name="On tap object" sid="4628504205885967" type="Touch">
+                    <param id="0" name="Object">TapToStart</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="3869774223959899" type="TapToStart">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="2668490779536359" type="TapToStart" />
+                <action id="-13" name="Set time scale" sid="3667024596310027" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8150164849746451">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1640524209434235" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="7413784147593221" type="BubbleDetail">
+                    <param id="0" name="Object">ProgressBarMiddle</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

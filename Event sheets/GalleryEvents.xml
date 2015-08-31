@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GalleryEvents</name>
+    <events>
+        <event-block sid="7530188123925764">
+            <conditions>
+                <condition id="17" name="On tap object" sid="1158163774460582" type="Touch">
+                    <param id="0" name="Object">GalleryButton</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8747159565556144">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7077441192771704" type="GalleryButton">
+                            <param id="0" name="Instance variable">PhotoNumber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="6312037031884016" type="Pictures">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="2748309500106105" type="Level1Bkg" />
+                    </actions>
+                </event-block>
+                <event-block sid="9668698101809405">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1036082381413579" type="GalleryButton">
+                            <param id="0" name="Instance variable">PhotoNumber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="6406964070564733" type="Pictures">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="839213997135894" type="Level2Bkg" />
+                    </actions>
+                </event-block>
+                <event-block sid="7048651391993843">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1281239711922685" type="GalleryButton">
+                            <param id="0" name="Instance variable">PhotoNumber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="3481728331572552" type="Pictures">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="6474864150169666" type="Level3Bkg" />
+                    </actions>
+                </event-block>
+                <event-block sid="2716205392500783">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9470242952660351" type="GalleryButton">
+                            <param id="0" name="Instance variable">PhotoNumber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="7639942937283578" type="Pictures">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="1567302303436622" type="Level4Bkg" />
+                    </actions>
+                </event-block>
+                <event-block sid="8487615618662052">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="1427366383511821" type="GalleryButton">
+                            <param id="0" name="Instance variable">PhotoNumber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="6347505765791634" type="Pictures">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="2633616570031309" type="Level5Bkg" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4946950593548682">
+            <conditions>
+                <condition id="17" name="On tap object" sid="4305914714558431" type="Touch">
+                    <param id="0" name="Object">Pictures</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3046111718595213" type="Pictures">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

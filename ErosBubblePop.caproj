@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>ErosBubblePop</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>Bruno Balderrabano, Mauro Rey</author>
+    <author-email>bmbalderrabano@gmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.scgames.erosbubblepop</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>21202</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Level1Bkg" sid="1706477370422414">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="824712843042136" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas1.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bubble" sid="9154013376891922">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Is the bubble shown?" name="Alive" sid="1449018834045178" type="boolean" />
+                <instance-variable comment="Order in wich the bubbles have spawned" name="Order" sid="6136221664436834" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2532516793873322" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510638" original-source="C:\Users\Bruno\Desktop\Burbuja.png">
+                        <collision-poly>
+                            <point x="0.177778" y="0.170213" />
+                            <point x="0.488889" y="0.0425532" />
+                            <point x="0.822222" y="0.170213" />
+                            <point x="0.955556" y="0.489362" />
+                            <point x="0.8" y="0.808511" />
+                            <point x="0.488889" y="0.93617" />
+                            <point x="0.2" y="0.808511" />
+                            <point x="0.0444444" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Popping" pingpong="0" repeatcount="1" repeatto="0" sid="1754870370078684" speed="5">
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\Burbujas\Bubbles_0005_Standard.png">
+                        <collision-poly>
+                            <point x="0.146341" y="0.142857" />
+                            <point x="0.487805" y="0" />
+                            <point x="0.853659" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.853659" y="0.857143" />
+                            <point x="0.487805" y="1" />
+                            <point x="0.146341" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.512195" original-source="C:\Users\Bruno\Desktop\Bubbles_0001_Explosion2.png">
+                        <collision-poly>
+                            <point x="0.818182" y="0.8" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0.488889" />
+                            <point x="0.863636" y="0.866667" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Growing" pingpong="0" repeatcount="1" repeatto="0" sid="9426357224542916" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\Bruno\Desktop\Burbujas\Bubbles_0010_Grow2.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.133333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.857143" y="0.133333" />
+                            <point x="1" y="0.466667" />
+                            <point x="0.857143" y="0.866667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.866667" />
+                            <point x="0" y="0.466667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\Burbujas\Bubbles_0008_Grow4.png">
+                        <collision-poly>
+                            <point x="0.148148" y="0.142857" />
+                            <point x="0.481481" y="0" />
+                            <point x="0.851852" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.851852" y="0.857143" />
+                            <point x="0.481481" y="1" />
+                            <point x="0.148148" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\Burbujas\Bubbles_0005_Standard.png">
+                        <collision-poly>
+                            <point x="0.146341" y="0.142857" />
+                            <point x="0.487805" y="0" />
+                            <point x="0.853659" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.853659" y="0.857143" />
+                            <point x="0.487805" y="1" />
+                            <point x="0.146341" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="6623905837455555">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Level2Bkg" sid="5683963911668749">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4339928680938901" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas2.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Level3Bkg" sid="581986272754099">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5697315039126793" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas3Cen.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuBkg" sid="5663695907415125">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2562638027518234" speed="5">
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\StartMenu_0003_MenuBooks.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="5746028846691086">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1575187127687725" speed="5">
+                    <frame duration="1" hotspotX="0.503185" hotspotY="0.502415" original-source="C:\Users\Bruno\Desktop\StartMenu_0002_MenuGirls.png">
+                        <collision-poly>
+                            <point x="0.0191083" y="0.0144928" />
+                            <point x="0.974522" y="0.0193237" />
+                            <point x="0.993631" y="0.497585" />
+                            <point x="0.987261" y="0.990338" />
+                            <point x="0.0127389" y="0.990338" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuTitle" sid="3394243075935097">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5876100659045241" speed="5">
+                    <frame duration="1" hotspotX="0.501945" hotspotY="0.503067" original-source="C:\Users\Bruno\Desktop\StartMenu_0001_Eros--Bubble-Pop.png">
+                        <collision-poly>
+                            <point x="0.428016" y="0.674847" />
+                            <point x="0.498054" y="0" />
+                            <point x="0.529183" y="0.742331" />
+                            <point x="0.918288" y="0.871166" />
+                            <point x="0.498054" y="0.981595" />
+                            <point x="0.0583658" y="0.907975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TapToStartMenu" sid="1099447956127944">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1741922432869173">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5681166818113182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="C:\Users\Bruno\Desktop\StartMenu_0000_Tap-to-Start.png">
+                        <collision-poly>
+                            <point x="0.0224359" y="0.0909091" />
+                            <point x="0.5" y="0.376623" />
+                            <point x="0.907051" y="0.376623" />
+                            <point x="0.977564" y="0.493506" />
+                            <point x="0.916667" y="0.662338" />
+                            <point x="0.5" y="0.74026" />
+                            <point x="0.0641026" y="0.74026" />
+                            <point x="0.00961538" y="0.493506" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TapToStart" sid="5506783374590277">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="494458732006928">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2078083696896166" speed="5">
+                    <frame duration="1" hotspotX="0.501449" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\TapToStart.png">
+                        <collision-poly>
+                            <point x="0.026087" y="0.06" />
+                            <point x="0.968116" y="0.0733333" />
+                            <point x="0.965217" y="0.92" />
+                            <point x="0.0347826" y="0.92" />
+                            <point x="0.0173913" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CongratsBaby" sid="948269955226861">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="9997546687288443">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1847383705420202" speed="5">
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\WinLoseButtons_0003_You-Win.png">
+                        <collision-poly>
+                            <point x="0.0103627" y="0.0147059" />
+                            <point x="0.994819" y="0.00735294" />
+                            <point x="0.994819" y="0.992647" />
+                            <point x="0.0103627" y="0.985294" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SorryDarling" sid="2583739202019231">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="3309097573613363">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3427443716225258" speed="5">
+                    <frame duration="1" hotspotX="0.502618" hotspotY="0.503704" original-source="C:\Users\Bruno\Desktop\WinLoseButtons_0000_Sorry-Darling.png">
+                        <collision-poly>
+                            <point x="0.0052356" y="0.00740741" />
+                            <point x="0.994764" y="0.00740741" />
+                            <point x="0.994764" y="0.992593" />
+                            <point x="0.0104712" y="0.985185" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Level4Bkg" sid="3170232909802325">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7614342462330999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas4Cen.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Level5Bkg" sid="1991202190995975">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7400688626662455" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas5Cen.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackgroundGallery" sid="68270470149362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5901964103826083" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\GalleryFull.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="YouWin" sid="4992296301518139">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="4800131995583851">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1866353137558511" speed="5">
+                    <frame duration="1" hotspotX="0.501253" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\WinLoseButtons_0003_You-Win.png">
+                        <collision-poly>
+                            <point x="0.00501253" y="0.00714286" />
+                            <point x="0.997494" y="0.00357143" />
+                            <point x="0.997494" y="0.996429" />
+                            <point x="0.00501253" y="0.992857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBarBorder" sid="6992935080317195">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417585711542088" speed="5">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\unnamed.png">
+                        <collision-poly>
+                            <point x="0.322581" y="0.042735" />
+                            <point x="0.483871" y="0.0042735" />
+                            <point x="0.677419" y="0.042735" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.677419" y="0.957265" />
+                            <point x="0.483871" y="0.991453" />
+                            <point x="0.322581" y="0.957265" />
+                            <point x="0.0322581" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBarBkg" sid="4959305666414643">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5708986961967427" speed="5">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.502326" original-source="C:\Users\Bruno\Desktop\Bubblegauge_0004_Bubbles.png">
+                        <collision-poly>
+                            <point x="0.193548" y="0.027907" />
+                            <point x="0.483871" y="0.00930233" />
+                            <point x="0.774194" y="0.0325581" />
+                            <point x="0.935484" y="0.497674" />
+                            <point x="0.774194" y="0.967442" />
+                            <point x="0.483871" y="0.990698" />
+                            <point x="0.193548" y="0.972093" />
+                            <point x="0.0645161" y="0.497674" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBarMiddle" sid="4581312440929601">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6642542336365537" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0" original-source="C:\Users\Bruno\Desktop\GaugeBackAndBubbles_0005_GaugeBack.png">
+                        <image-point name="Bubbles" x="0.52" y="1" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar2" sid="4073448150308103">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="GalleryButton" sid="2343609410596368">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="The number of the photo this button triggers" name="PhotoNumber" sid="9412358210439243" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9855697733578157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BubbleDetail" sid="6194087239880286">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="3179214815562764">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6301195335581097" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.894737" original-source="C:\Users\Bruno\Desktop\GaugeBackAndBubbles_0004_MovingBubbles.png">
+                        <collision-poly>
+                            <point x="0.12" y="0.157895" />
+                            <point x="0.48" y="0" />
+                            <point x="0.92" y="0.105263" />
+                            <point x="1" y="0.473684" />
+                            <point x="0.92" y="0.894737" />
+                            <point x="0.48" y="1" />
+                            <point x="0.08" y="0.894737" />
+                            <point x="0.04" y="0.473684" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="ProgressBar" plugin-id="Sprite" sid="823764518922722">
+            <members>
+                <member>BubbleDetail</member>
+                <member>ProgressBarBkg</member>
+                <member>ProgressBarBorder</member>
+                <member>ProgressBarMiddle</member>
+            </members>
+        </family>
+        <family name="Pictures" plugin-id="Sprite" sid="2354532576956046">
+            <members>
+                <member>Level1Bkg</member>
+                <member>Level2Bkg</member>
+                <member>Level3Bkg</member>
+                <member>Level4Bkg</member>
+                <member>Level5Bkg</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Fade" sid="1528017314255761">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Level1.xml</layout>
+        <layout>Level2.xml</layout>
+        <layout>Level3.xml</layout>
+        <layout>Level4.xml</layout>
+        <layout>Level5.xml</layout>
+        <layout>Gallery.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>BubbleCalibration.xml</event-sheet>
+        <event-sheet>LayoutInitializer.xml</event-sheet>
+        <event-sheet>MenuEvents.xml</event-sheet>
+        <event-sheet>GalleryEvents.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="50">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
