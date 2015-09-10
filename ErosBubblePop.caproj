@@ -74,7 +74,7 @@
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="Popping" pingpong="0" repeatcount="1" repeatto="0" sid="1754870370078684" speed="5">
-                    <frame duration="1" hotspotX="0.512195" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\Burbujas\Bubbles_0005_Standard.png">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510638" original-source="C:\Users\Bruno\Documents\GitHub\ErosBubblePop\Animations\Bubble\Default\000.png">
                         <collision-poly>
                             <point x="0.146341" y="0.142857" />
                             <point x="0.487805" y="0" />
@@ -122,7 +122,7 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.512195" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\Burbujas\Bubbles_0005_Standard.png">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.510638" original-source="C:\Users\Bruno\Documents\GitHub\ErosBubblePop\Animations\Bubble\Default\000.png">
                         <collision-poly>
                             <point x="0.146341" y="0.142857" />
                             <point x="0.487805" y="0" />
@@ -144,7 +144,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4339928680938901" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas2.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\NewGirls_0004_Girl1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -152,7 +152,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5697315039126793" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas3Cen.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\NewGirls_0003_Girl2.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -286,7 +286,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7614342462330999" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas4Cen.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\NewGirls_0002_Girl3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -294,7 +294,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7400688626662455" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\ImagenesChicas5Cen.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\NewGirls_0000_Girl5.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -302,27 +302,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5901964103826083" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\GalleryFull.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="YouWin" sid="4992296301518139">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Fade" sid="4800131995583851">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1866353137558511" speed="5">
-                    <frame duration="1" hotspotX="0.501253" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\WinLoseButtons_0003_You-Win.png">
-                        <collision-poly>
-                            <point x="0.00501253" y="0.00714286" />
-                            <point x="0.997494" y="0.00357143" />
-                            <point x="0.997494" y="0.996429" />
-                            <point x="0.00501253" y="0.992857" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\NewGallery.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -412,6 +392,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Level6Bkg" sid="7098387766210204">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3839750746139973" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Bruno\Desktop\NewGirls_0001_Girl4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="ProgressBar" plugin-id="Sprite" sid="823764518922722">
@@ -429,6 +417,7 @@
                 <member>Level3Bkg</member>
                 <member>Level4Bkg</member>
                 <member>Level5Bkg</member>
+                <member>Level6Bkg</member>
             </members>
             <behaviors>
                 <behavior-type name="Fade" sid="1528017314255761">
@@ -444,6 +433,7 @@
         <layout>Level3.xml</layout>
         <layout>Level4.xml</layout>
         <layout>Level5.xml</layout>
+        <layout>Level6.xml</layout>
         <layout>Gallery.xml</layout>
     </layout-folder>
     <event-folder>

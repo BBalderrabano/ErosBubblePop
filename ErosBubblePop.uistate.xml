@@ -10,15 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Gallery</layout>
-        <layout active="1" order="2">Level1</layout>
-        <layout order="3">Level2</layout>
-        <layout order="4">Level3</layout>
-        <layout order="5">Level4</layout>
-        <layout order="6">Level5</layout>
-        <event-sheet order="1">GalleryEvents</event-sheet>
-        <event-sheet order="7">BubbleCalibration</event-sheet>
-        <event-sheet order="8">LayoutInitializer</event-sheet>
+        <layout order="0">Level3</layout>
+        <layout order="1">Level4</layout>
+        <layout order="2">Level5</layout>
+        <layout order="3">Level6</layout>
+        <layout order="5">Level1</layout>
+        <layout order="7">Menu</layout>
+        <layout order="8">Gallery</layout>
+        <event-sheet active="1" order="4">LayoutInitializer</event-sheet>
+        <event-sheet order="6">BubbleCalibration</event-sheet>
+        <event-sheet order="9">GalleryEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,18 +27,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
-        <family expanded="1" name="ProgressBar" />
-        <family expanded="0" name="Pictures" />
+    <families-expanded root="0">
+        <family expanded="0" name="ProgressBar" />
+        <family expanded="1" name="Pictures" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
-        <folder expanded="0" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
-        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Level1Bkg/" />
         <folder expanded="1" path="animation-folder/Bubble/" />
         <folder expanded="1" path="animation-folder/Level2Bkg/" />
@@ -52,11 +53,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Level4Bkg/" />
         <folder expanded="1" path="animation-folder/Level5Bkg/" />
         <folder expanded="1" path="animation-folder/BackgroundGallery/" />
-        <folder expanded="1" path="animation-folder/YouWin/" />
         <folder expanded="1" path="animation-folder/ProgressBarBorder/" />
         <folder expanded="1" path="animation-folder/ProgressBarBkg/" />
         <folder expanded="1" path="animation-folder/ProgressBarMiddle/" />
         <folder expanded="1" path="animation-folder/GalleryButton/" />
         <folder expanded="1" path="animation-folder/BubbleDetail/" />
+        <folder expanded="1" path="animation-folder/Level6Bkg/" />
     </folders-expanded>
 </c2uistate>

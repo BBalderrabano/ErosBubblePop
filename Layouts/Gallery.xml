@@ -78,13 +78,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PhotoNumber>1</PhotoNumber>
+                        <PhotoNumber>4</PhotoNumber>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>174</x>
-                        <y>246.743591309</y>
+                        <x>105</x>
+                        <y>242</y>
                         <z>0</z>
                         <width>105</width>
                         <height>153.487182617</height>
@@ -103,13 +103,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PhotoNumber>2</PhotoNumber>
+                        <PhotoNumber>6</PhotoNumber>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>316.617797852</x>
-                        <y>246.57711792</y>
+                        <x>368</x>
+                        <y>245</y>
                         <z>0</z>
                         <width>105</width>
                         <height>153.487182617</height>
@@ -133,8 +133,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>111.88911438</x>
-                        <y>434.713104248</y>
+                        <x>105</x>
+                        <y>424</y>
                         <z>0</z>
                         <width>105</width>
                         <height>153.487182617</height>
@@ -153,13 +153,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <PhotoNumber>4</PhotoNumber>
+                        <PhotoNumber>2</PhotoNumber>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>238.703918457</x>
-                        <y>433.162322998</y>
+                        <x>237</x>
+                        <y>425</y>
                         <z>0</z>
                         <width>105</width>
                         <height>153.487182617</height>
@@ -178,13 +178,38 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PhotoNumber>1</PhotoNumber>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>368</x>
+                        <y>427</y>
+                        <z>0</z>
+                        <width>105</width>
+                        <height>153.487182617</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GalleryButton" uid="494">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
                         <PhotoNumber>5</PhotoNumber>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>363.32510376</x>
-                        <y>433.623809814</y>
+                        <x>238</x>
+                        <y>243</y>
                         <z>0</z>
                         <width>105</width>
                         <height>153.487182617</height>
@@ -372,6 +397,72 @@
                         <z>0</z>
                         <width>482.351989746</width>
                         <height>641.880981445</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Level5Bkg" uid="495">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240.175994873</x>
+                        <y>320.940002441</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Level6Bkg" uid="496">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>321</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>640</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

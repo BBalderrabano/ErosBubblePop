@@ -3,10 +3,51 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GalleryEvents</name>
     <events>
+        <variable constant="0" name="BigPicture" sid="6795863124297426" static="0" type="number">0</variable>
+        <event-block sid="8543682323188241">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7899080200138153" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8557926107282512" type="System">
+                    <param id="0" name="Variable">BigPicture</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4946950593548682">
+            <conditions>
+                <condition id="17" name="On tap object" sid="4305914714558431" type="Touch">
+                    <param id="0" name="Object">Pictures</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7657111389149993" type="System">
+                    <param id="0" name="Variable">BigPicture</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="3046111718595213" type="Pictures">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="3263390602009948" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-9" name="Set value" sid="8357895494344049" type="System">
+                    <param id="0" name="Variable">BigPicture</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="7530188123925764">
             <conditions>
                 <condition id="17" name="On tap object" sid="1158163774460582" type="Touch">
                     <param id="0" name="Object">GalleryButton</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5415806797013039" type="System">
+                    <param id="0" name="Variable">BigPicture</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions />
@@ -23,7 +64,11 @@
                         <action id="-16" name="Set opacity" sid="6312037031884016" type="Pictures">
                             <param id="0" name="Opacity">0</param>
                         </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="2748309500106105" type="Level1Bkg" />
+                        <action behavior="Fade" id="0" name="Restart fade" sid="2748309500106105" type="Level1Bkg" />
+                        <action id="-9" name="Set value" sid="2464590342177116" type="System">
+                            <param id="0" name="Variable">BigPicture</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9668698101809405">
@@ -38,7 +83,11 @@
                         <action id="-16" name="Set opacity" sid="6406964070564733" type="Pictures">
                             <param id="0" name="Opacity">0</param>
                         </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="839213997135894" type="Level2Bkg" />
+                        <action behavior="Fade" id="0" name="Restart fade" sid="839213997135894" type="Level2Bkg" />
+                        <action id="-9" name="Set value" sid="5458123155941177" type="System">
+                            <param id="0" name="Variable">BigPicture</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7048651391993843">
@@ -53,7 +102,11 @@
                         <action id="-16" name="Set opacity" sid="3481728331572552" type="Pictures">
                             <param id="0" name="Opacity">0</param>
                         </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="6474864150169666" type="Level3Bkg" />
+                        <action behavior="Fade" id="0" name="Restart fade" sid="6474864150169666" type="Level3Bkg" />
+                        <action id="-9" name="Set value" sid="9894930445681128" type="System">
+                            <param id="0" name="Variable">BigPicture</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="2716205392500783">
@@ -68,7 +121,11 @@
                         <action id="-16" name="Set opacity" sid="7639942937283578" type="Pictures">
                             <param id="0" name="Opacity">0</param>
                         </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="1567302303436622" type="Level4Bkg" />
+                        <action behavior="Fade" id="0" name="Restart fade" sid="1567302303436622" type="Level5Bkg" />
+                        <action id="-9" name="Set value" sid="5389231998215302" type="System">
+                            <param id="0" name="Variable">BigPicture</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8487615618662052">
@@ -83,22 +140,33 @@
                         <action id="-16" name="Set opacity" sid="6347505765791634" type="Pictures">
                             <param id="0" name="Opacity">0</param>
                         </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="2633616570031309" type="Level5Bkg" />
+                        <action behavior="Fade" id="0" name="Restart fade" sid="8691191809091668" type="Level6Bkg" />
+                        <action id="-9" name="Set value" sid="7005756261659718" type="System">
+                            <param id="0" name="Variable">BigPicture</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6246123935790346">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3044194192409387" type="GalleryButton">
+                            <param id="0" name="Instance variable">PhotoNumber</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="5889969932356332" type="Pictures">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="5468345077592827" type="Level4Bkg" />
+                        <action id="-9" name="Set value" sid="711015045816812" type="System">
+                            <param id="0" name="Variable">BigPicture</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="4946950593548682">
-            <conditions>
-                <condition id="17" name="On tap object" sid="4305914714558431" type="Touch">
-                    <param id="0" name="Object">Pictures</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Set opacity" sid="3046111718595213" type="Pictures">
-                    <param id="0" name="Opacity">0</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>
